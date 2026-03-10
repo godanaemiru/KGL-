@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api',
+  baseURL: 'https://kgl-ogni.onrender.com/api',
 });
 
 // Automatically add the token to the header if it exists in local storage
