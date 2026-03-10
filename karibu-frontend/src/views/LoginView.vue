@@ -43,7 +43,7 @@
       </form>
 
       <div class="footer-links">
-        <p>© 2024 Karibu Groceries LTD</p>
+        <p>© 2026 Karibu Groceries LTD</p>
         <p>• Maganjo & Matugga Branches •</p>
       </div>
     </div>
