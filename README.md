@@ -1,10 +1,10 @@
-# 🍃 Karibu Groceries Limited (KGL) - Enterprise POS & Inventory System
+#  Karibu Groceries Limited (KGL) - Enterprise POS & Inventory System
 
 An enterprise-grade Point of Sale (POS) and Inventory Management web application custom-built for Karibu Groceries Limited. This system digitizes KGL's operations across their Maganjo and Matugga branches, providing role-based access, real-time analytics, and strict business-rule enforcement.
 
-## 🚀 Live Demo
-* **Frontend:** [Insert your Vercel URL here, e.g., https://kgl-frontend.vercel.app]
-* **Backend API:** [Insert your Render URL here]
+##  Live Demo
+* **Frontend:** https://karibu-pi.vercel.app/
+* **Backend API:** https://kgl-ogni.onrender.com/
 
 ---
 
