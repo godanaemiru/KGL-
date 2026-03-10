@@ -7,6 +7,9 @@ require('dotenv').config();
 // Initialize the Express application
 const app = express();
 
+const swaggerDocs = require('./swagger');
+swaggerDocs(app);
+
 // Middleware to parse JSON and enable CORS
 app.use(express.json());
 app.use(cors());
@@ -21,6 +24,9 @@ const mongoURI = process.env.MONGO_URI || 'mongodb://localhost:27017/karibu_groc
 mongoose.connect(mongoURI)
   .then(() => console.log('Successfully connected to MongoDB.'))
   .catch((err) => console.error('MongoDB connection error:', err));
+
+const apiRoutes = require('./routes/apiRoutes');
+app.use('/api', apiRoutes);
 
 // Basic test route
 app.get('/', (req, res) => {

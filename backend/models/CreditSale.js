@@ -32,7 +32,7 @@ const creditSaleSchema = new mongoose.Schema({
     type: String, 
     required: true, 
     minlength: 2, 
-    match: /^[a-zA-Z0-9 ]+$/ 
+    match: /^[a-zA-Z0-9_ ]+$/ 
   }, // [cite: 18]
   dueDate: { type: Date, required: true }, // [cite: 18]
   produceName: { 
@@ -40,7 +40,11 @@ const creditSaleSchema = new mongoose.Schema({
     required: true, 
     minlength: 2, 
     match: /^[a-zA-Z0-9 ]+$/ 
-  }, // [cite: 18]
+  },
+  date: { 
+    type: Date, 
+    default: Date.now // Falls back to current time if none is provided
+  }, 
   produceType: { type: String, required: true }, // [cite: 18]
   tonnage: { type: Number, required: true }, // [cite: 18]
   dispatchDate: { type: Date, required: true, default: Date.now } // [cite: 18]

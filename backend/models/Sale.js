@@ -18,13 +18,17 @@ const saleSchema = new mongoose.Schema({
     type: String, 
     required: true, 
     minlength: 2, 
-    match: /^[a-zA-Z0-9 ]+$/ 
+    match: /^[a-zA-Z0-9_ ]+$/ 
   }, // [cite: 15]
   branch: { 
     type: String, 
     required: true, 
     enum: ['Maganjo', 'Matugga'] 
-  }
+  },
+  date: { 
+    type: Date, 
+    default: Date.now // Falls back to current time if none is provided
+  },
 }, { timestamps: true }); // handles date and time automatically [cite: 15]
 
 module.exports = mongoose.model('Sale', saleSchema);

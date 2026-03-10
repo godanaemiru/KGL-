@@ -10,7 +10,7 @@ const produceSchema = new mongoose.Schema({
     type: String, 
     required: true, 
     minlength: 2, 
-    match: [/^[a-zA-Z ]+$/, 'Only alphabets allowed'] 
+    match: [/^[a-zA-Z0-9 ]+$/, 'Only alphanumeric characters and spaces allowed']
   }, // 
   date: { 
     type: Date, 
@@ -20,7 +20,7 @@ const produceSchema = new mongoose.Schema({
   tonnage: { 
     type: Number, 
     required: true, 
-    min: [100, 'Tonnage must be at least 3 digits (100+)'] 
+    min: [0, 'Tonnage cannot be negative'] 
   }, // 
   cost: { 
     type: Number, 
