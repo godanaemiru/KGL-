@@ -55,7 +55,7 @@ If you wish to run this application locally, follow these steps:
 
 ### 1. Clone the repository
 \`\`\`bash
-git clone https://github.com/yourusername/your-repo-name.git
+git clone https://github.com/godanaemiru/KGL-
 \`\`\`
 
 ### 2. Setup the Backend
@@ -88,5 +88,3 @@ npm run dev
 
 ---
 
-## 📄 License
-This project was developed for academic/demonstration purposes as a final project submission.
