@@ -8,7 +8,7 @@ An enterprise-grade Point of Sale (POS) and Inventory Management web application
 
 ---
 
-## 👥 Test Credentials
+##  Test Credentials
 To evaluate the system, please log in using the following seeded accounts. Each role has a completely different UI and permission set:
 
 | Role | Username | Password | Branch | Access Level |
@@ -19,7 +19,7 @@ To evaluate the system, please log in using the following seeded accounts. Each 
 
 ---
 
-## ✨ Key Features & Business Logic
+##  Key Features & Business Logic
 
 This application isn't just a database GUI; it actively enforces KGL's business rules:
 
@@ -32,7 +32,7 @@ This application isn't just a database GUI; it actively enforces KGL's business 
 
 ---
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 **Frontend (Client)**
 * **Vue.js 3** (Composition API)
