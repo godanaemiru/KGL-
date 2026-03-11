@@ -41,6 +41,7 @@ const creditSaleSchema = new mongoose.Schema({
     minlength: 2, 
     match: /^[a-zA-Z0-9 ]+$/ 
   },
+  branch: { type: String, required: true },
   date: { 
     type: Date, 
     default: Date.now // Falls back to current time if none is provided
